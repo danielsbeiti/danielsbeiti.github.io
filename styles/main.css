@@ -8,25 +8,10 @@ body {
   background: linear-gradient(to bottom, #222, #444);
 }
 
-
 header, footer {
   background-color: #161515;
   padding: 1em;
 }
-
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-
-nav li {
-  margin-right: 1em;
-}
-
 
 main {
   padding: 2em;
@@ -36,13 +21,24 @@ section {
   margin: 2em 0;
 }
 
+
+/* My name and titles stylig*/
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+}
+
 h2 {
   margin-bottom: 1em;
   color: #ddd;
-  border-bottom: 1px solid #444;
+  font-size: 2em;
   padding-bottom: 0.5em;
 }
 
+
+/* Project cards styling */
 .card {
   background-color: #333;
   border: 1px solid #444;
@@ -53,7 +49,7 @@ h2 {
   display: inline-block;
   text-align: center;
   width: 200px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* less shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   display: inline-block;
   margin: 1em;
 }
@@ -70,15 +66,19 @@ h2 {
   cursor: pointer;
 }
 
+
 .card img {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 1em;
 }
 
+
+
+/* Social Icon styling */
 .social-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin: 0.5em;
   transition: transform 0.3s, color 0.3s;
   cursor: pointer;
@@ -97,5 +97,5 @@ h2 {
 }
 
 #social-icons .social-icon {
-  color: #ccc; /* whitish grey */
+  color: #ccc;
 }
