@@ -11,30 +11,43 @@
 </head>
 <body>
   <header>
-    <h1 style="text-align: center;">Daniel's Name</h1>
+    <h1 style="text-align: center; color: black;">Daniel Sbeiti</h1>
   </header>
   <main>
-    <p>
-      Hello! I’m Jane Doe, a passionate developer who loves building awesome things. 
-      In my free time, I enjoy exploring new technologies, swimming, and reading fiction.
-    </p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Jane Doe, a passionate developer who loves building awesome things. 
+        In my free time, I enjoy exploring new technologies, swimming, and reading fiction.
+      </p>
+    </section>
+
     <section id="projects">
-      <!-- 6 hovering project cards -->
+      <h2>Research Projects</h2>
+      <!-- Project cards -->
       <article class="card">
         <img src="path/to/image1.jpg" alt="Project 1" />
-        <h2>Project 1</h2>
-        <button onclick="window.open('pdfs/project1.pdf')">View PDF</button>
+        <h3>Project 1</h3>
+        <button onclick="window.open('pdfs/project1.pdf')">View More</button>
       </article>
-      <div class="card">Project 2</div>
-      <div class="card">Project 3</div>
-      <div class="card">Project 4</div>
+      <article class="card">
+        <img src="path/to/image2.jpg" alt="Project 2" />
+        <h3>Project 2</h3>
+        <button onclick="window.open('pdfs/project2.pdf')">View More</button>
+      </article>
+      <article class="card">
+        <img src="path/to/image3.jpg" alt="Project 3" />
+        <h3>Project 3</h3>
+        <button onclick="window.open('pdfs/project3.pdf')">View More</button>
+      </article>
+      <article class="card">
+        <img src="path/to/image4.jpg" alt="Project 4" />
+        <h3>Project 4</h3>
+        <button onclick="window.open('pdfs/project4.pdf')">View More</button>
+      </article>
     </section>
-    <section id="links">
-      <a href="https://www.linkedin.com" class="hover-link">LinkedIn</a>
-      <a href="https://www.github.com" class="hover-link">GitHub</a>
-      <a href="mailto:someone@example.com" class="hover-link">Mail</a>
-    </section>
-    <div>
+
+    <div id="social-icons">
       <a href="https://linkedin.com" class="social-icon">
         <i class="fab fa-linkedin"></i>
       </a>
