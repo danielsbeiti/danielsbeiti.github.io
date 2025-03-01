@@ -10,7 +10,7 @@ body {
 
 header, footer {
   background-color: #161515;
-  padding: 1em;
+  padding: 0.15em;
 }
 
 main {
@@ -21,11 +21,14 @@ section {
   margin: 2em 0;
 }
 
+
+
+
 /* My name and titles styling */
 .main-title {
   text-align: center;
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -37,6 +40,15 @@ h2 {
   border-bottom: 1px solid #444;
 }
 
+
+footer {
+  font-size: small;
+}
+
+
+
+
+
 /* About section layout */
 .about-container {
   display: flex;
@@ -45,23 +57,32 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
   gap: 4em;
+  padding: 0 2em;
 }
 
 .about-text {
   flex: 0 0 60%;
   text-align: left;
-  padding-right: 2em;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .about-image {
   flex: 0 0 35%;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-image {
-  width: 100%;
-  border-radius: 10px;
+  max-width: 60%;
+  width: auto;
+  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+
+
 
 /* Project cards styling */
 .card {
@@ -69,60 +90,119 @@ h2 {
   border: 1px solid #444;
   padding: 1em;
   margin: 1em;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: transform 0.2s;
-  text-align: center;
-  width: 200px;
+  text-align: left;
+  width: 350px;
+  height: 500px; /* Fixed height added */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   display: inline-block;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .card img {
-  max-width: 100%;
+  width: 100%;
+  height: 180px; /* Fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio */
   border-radius: 10px;
   margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Button styling */
-.view-more-btn {
-  background-color: #ccc;
-  color: #333;
-  border: none;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+.card-title {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 0.5em 0 0.2em 0.5em;
+  transition: color 0.3s ease;
 }
 
-.view-more-btn:hover {
-  background-color: #0f0;
-  color: #000;
+.card-title:hover {
+  color: #0f0;
 }
+
+.card-subtitle {
+  color: #888;
+  font-size: 0.7em;
+  margin: 0.5em 0 0.2em 0.5em;
+}
+
+
+
 
 /* Social Icon styling */
 .social-icon {
-  font-size: 2.5em;
-  margin: 0.5em;
+  font-size: 2.6em;
+  margin: 0.2em;
   color: #ccc;
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
+  margin-bottom: 0.2em; /* reduced from 0.4em */
 }
 
 .social-icon i {
+  transition: none;
+}
+
+.social-icon:hover i {
   transition: all 0.3s ease;
 }
 
 .social-icon:hover,
 .social-icon:hover i {
-  transform: scale(1.2);
+  transform: scale(1.05);
   color: #0f0;
 }
 
 #social-icons {
-  margin-top: 2em;
+  margin-top: 0.5em; /* reduced from 2em */
+}
+
+
+
+
+/* clicable texts*/
+.school-link {
+  color: #add8e6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.school-link:hover {
+  color: #0f0; 
+  transition: all 0.4s ease;
+}
+
+
+
+
+
+/* friends pages */
+
+.friends {
+  text-align: left;
+  font-size: small;
+  font-style: italic;
+  justify-content: flex-start;
+}
+
+.friends-link {
+  font-size: small;
+  font-style: italic;
+  color: #ddd;
+  text-align: left;
+}
+
+.friends-link:hover {
+  color: #0f0; 
+  transition: all 0.4s ease;
+  text-align: left;
 }
